@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository
     ```
-    git clone https://github.com/<Your-Git-Username>/King-Of-The-Crown.git
+    git clone https://github.com/Yannn001/King-Of-The-Crown-KOTC-Multiplayer-Mario-Game.git
     ```
 2. Open the solution file (Sprint1.sln) with Visual Studio
 3. Resolve any dependencies if necessary (mostly related to MonoGame and XNA)
