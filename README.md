@@ -55,6 +55,8 @@ Below is a brief overview of the important directories in the project:
 
 - **Program.cs:** The main entry point for the application.
 
+https://raw.githubusercontent.com/Yannn001/personal-portfolio/main/Chengyan's%20personal%20portfolio/images/ezgif-4-fb7ff1fb4e.gif![image](https://github.com/Yannn001/King-Of-The-Crown-KOTC-Multiplayer-Mario-Game/assets/69735000/19dac7fd-2d7b-4317-bf15-c76758298417)
+
 ## Contribution
 
 All contributions are welcome! If you want to contribute, please follow these steps:
