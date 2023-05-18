@@ -1,0 +1,34 @@
+﻿Author: Riley Downs
+Date: 11/29/2022
+Sprint 5
+Reviewing: Game1.cs by all of us
+Time spent: 25 minutes
+
+I chose this file because our Game1 file is my biggest regret about the past 5 sprints and just got worse
+and worse over time. We put the majority of our model and logic within Game1, when much of that could've been
+managed by a Model class, managed within classes, and managed by collections of classes and interfaces.
+
+Code Smells: 
+	--This class is way too long.
+		It is 500+ lines long, has 50+ class variables, and 25+ methods. This is an obvious code smell and 
+	shows we really did need a class containing Model details. 
+	--Feature Envy
+		It calls a lot of Level methods with LoadLevel(), level.AddSpriteToEntityLayer(), etc. Maybe this should be
+		managed by Level or by a LevelManager class.
+		It calls a lot of Controller methods as well. When looking at other people's XNA projects, I saw someone 
+		have a separate "KeyBindings" class and that could be useful.
+	--Hard coded Values
+		The values in progress Bar are all Hard coded and not based on screen resolution.
+	--Switch Statements / missing polymorphism
+		The logic in Draw uses if-else statements when it could have used GameStates or a Model managing which sprites
+		draw and all it does is foreach(sprite) { sprite.Draw(); }. The Draw method also calls some clear and mute
+		methods which are NOT draw logic, but rather update logic.
+
+Comments for improvement:
+	--Use the Model-View-Controller Design Pattern, especially the Model.
+	--Add all pngs to a single sprite sheet
+	--The game should have one state at a time, not all 5 states throughout.
+	--Don't hard code values, make readonly ints for stuff like timers and use screen dimensions to format
+	  progress bar
+	--Move many methods to the Model
+	--Make Game1 responsible for the Game Loop only! - One class, one responsibility!

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level>
+  <Title>Red Giant</Title>
+  <LevelColumns>26</LevelColumns>
+  <LevelRows>14</LevelRows>
+  <ScreenWidth>1248</ScreenWidth>
+  <ScreenHeight>672</ScreenHeight>
+  <TileWidth>48</TileWidth>
+  <TileHeight>48</TileHeight>
+  <BackgroundColor>Black</BackgroundColor>
+  <MaskColor>Red</MaskColor>
+	<SpawnPoints>
+		<Point x="10" y="11"></Point>
+		<Point x="13" y="4"></Point>
+		<Point x="16" y="7"></Point>
+	</SpawnPoints>
+  <Layer parallax="1.0">
+    <Column x="0">
+		<block y="0" type="wall" vertical ="top" horizontal ="left"></block>
+		<block y="1" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="2" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="3" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="4" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="5" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="6" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="7" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="8" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="9" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="10" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="11" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="12" type="wall" vertical="mid" horizontal="left"></block>
+		<block y="13" type="wall" vertical="bottom" horizontal="left"></block>
+	</Column>
+    <Column x="1">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="7" type="platform" horizontal="left" />
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="2">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<player y="3" power="small" action="idle" variant="player1" />
+		<block y="7" type="platform" horizontal="mid"></block>
+		<block y="11" type="platform" horizontal="left"></block>
+		<block y="12" type="hazard" variant="hothead"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="3">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="7" type="platform" horizontal="mid" />
+		<block y="11" type="platform" horizontal="mid"></block>
+		<block y="12" type="hazard" variant="hothead"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="4">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="7" type="platform" horizontal="right" variant="tapered"></block>
+		<block y="11" type="platform" horizontal="mid"></block>
+		<block y="12" type="hazard" variant="hothead"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="5">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="11" type="platform" horizontal="right"></block>
+		<block y="12" type="hazard" variant="hothead"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="6">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="7">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="10" type="platform" horizontal="left" variant="tapered"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="8">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="10" type="platform" horizontal="mid"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="9">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="10" type="platform" horizontal="mid"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="10">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="10" type="platform" horizontal="right" variant="tapered"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="11">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="12">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="7" type="platform" horizontal="left"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="13">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="7" type="platform" horizontal="mid"></block>
+		<block y="10" type="platform" horizontal="left" variant="tapered"></block>
+		<block y="11" type="hazard" variant="hothead"></block>
+		<block y="12" type="hazard" variant="hothead"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+    <Column x="14">
+		<block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		<block y="7" type="platform" horizontal="right" variant="tapered"></block>
+		<block y="10" type="platform" horizontal="mid"></block>
+		<block y="11" type="hazard" variant="hothead"></block>
+		<block y="12" type="hazard" variant="hothead"></block>
+		<block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+    </Column>
+	  <Column x="15">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="10" type="platform" horizontal="right" variant="tapered"></block>
+		  <block y="11" type="hazard" variant="hothead"></block>
+		  <block y="12" type="hazard" variant="hothead"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="16">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="4" type="platform" horizontal="left" variant="tapered"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="17">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="4" type="platform" horizontal="mid"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="18">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="4" type="platform" horizontal="mid"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="19">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="4" type="platform" horizontal="right" variant="tapered"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="20">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="12" type="jumpPad"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="21">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="7" type="platform" horizontal="left" variant="tapered"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="22">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="7" type="platform" horizontal="mid"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="23">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <player y="3" power="small" action="idle" variant="player2" />
+		  <block y="7" type="platform" horizontal="mid"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="24">
+		  <block y="0" type="wall" vertical ="top" horizontal ="mid"></block>
+		  <block y="7" type="platform" horizontal="right" />
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="mid"></block>
+	  </Column>
+	  <Column x="25">
+		  <block y="0" type="wall" vertical ="top" horizontal ="right"></block>
+		  <block y="1" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="2" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="3" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="4" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="5" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="6" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="7" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="8" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="9" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="10" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="11" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="12" type="wall" vertical="mid" horizontal="right"></block>
+		  <block y="13" type="wall" vertical ="bottom" horizontal ="right"></block>
+	  </Column>
+  </Layer>
+</Level>

@@ -1,0 +1,15 @@
+﻿Author: Kush Dalal
+Date: 11/29/22
+FileName: CrownEntity.cs
+FileAuthor: Kevyn Angueira Irizarry
+TimeTaken: 15 mins
+
+Comments:
+This is the entity class for the Crown. Overall the file is slightly long at 137 lines but follows design patterns pretty well. Most notably we can see good uses of the
+state design pattern through the change state functions that make up a majority of the body. The organization of these could be better as some are just mixed in with 
+other functions. Furthermore there are no comments whatsoever to explain things. That being said most functions are named well and make sense. Otherwise the code
+follows the pattern of most of our other entities, making it relatively easy to read.
+
+Changes: There are two constructors taking up almost 30 lines of code that are just not used at all, these can and should be removed as redundent code. 
+I would also add comments in to functions and confusing parts such as the position function to explain things better. The turn attached function also has an interesting
+if statement for stealing, this could probably be implemented elsewhere as this looks like a work around for a larger problem. 

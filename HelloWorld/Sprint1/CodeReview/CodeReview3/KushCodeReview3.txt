@@ -1,0 +1,14 @@
+﻿Author: Kush Dalal
+Date: 10/25/22
+FileName: CollisionDetector
+FileAuthor: Kevyn Angueira Irizarry
+TimeTaken: 35 min
+Description: This class is used to detect collisions between two objects. It contains all the methods for the sweeping collisions and movine the player correctly
+according to said collisions. The main purpose of the class is to detect moving objects to then check collisions against via the quadtree instead of everything.
+This is done to increase performance and decrease the amount of collisions that are checked. The class contains a lot of methods that have no comments and was very 
+confusing to understand at first. However after some analysis it is pretty straight forwards as the variables and methods are named accordingly. I do think the 
+method for collision detection in general is overcomplicated and could be simplified.
+Changes:
+ adding comments to the class and methods. However i would also probably simplify down how collisions are checked by building it off the rigidbody system instead
+of the old transformation system which is clunky and over complicated. This would be easier as we could use velocity values to determine moving objects and effect
+the collision collider in a similar way. This is perhaps something to do for next time.

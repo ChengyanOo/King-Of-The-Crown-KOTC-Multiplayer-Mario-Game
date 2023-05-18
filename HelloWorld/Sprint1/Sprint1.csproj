@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\TILE_blue.png" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+    <None Remove="CodeReview\CodeReview2\" />
+    <None Remove="Yann%27s temp classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\Content\back.png" />
+    <Content Include="bin\Debug\net6.0\Content\backHealthBar.png" />
+    <Content Include="bin\Debug\net6.0\Content\front.png" />
+    <Content Include="bin\Debug\net6.0\Content\frontHealthBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Yann%27s temp classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\Content\DeepSpace.xml" />
+    <None Include="bin\Debug\net6.0\Content\IceAge.xml" />
+    <None Include="bin\Debug\net6.0\Content\RedGiant.xml" />
+    <None Include="bin\Debug\net6.0\DeepSpace.xml" />
+    <None Include="bin\Debug\net6.0\IceAge.xml" />
+    <None Include="bin\Debug\net6.0\RedGiant.xml" />
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

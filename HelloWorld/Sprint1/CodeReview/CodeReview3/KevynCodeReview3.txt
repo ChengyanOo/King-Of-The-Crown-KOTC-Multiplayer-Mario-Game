@@ -1,0 +1,12 @@
+﻿Author: Kevyn Angueira Irizarry
+Date: 10/25/22
+FileName: Rigidbody.cs
+FileAuthor: Kush Dalal
+TimeTaken: 10 min
+Comments: 
+	I don't understand the name rigid bodies. The rigid bodies is a pretty comprehensive psysics class. It gives velocities, acceleration and mass. I'd say that it is overengineered. Velocities alone would've sufficed.
+	I can see that it is pretty self sufficient the only thing that is funky is the checkGround method that tightly couples it to other methods that have nothing to do with physics. We have a lot of problems detecting when Mario
+	is on the ground and not having him jitter all over the place.
+Changes: 
+	In the future we would remove the checkGround and properly handle collisions with the ground. This task should be moved to the collisionDetector and the use of physics needs to be improved.
+

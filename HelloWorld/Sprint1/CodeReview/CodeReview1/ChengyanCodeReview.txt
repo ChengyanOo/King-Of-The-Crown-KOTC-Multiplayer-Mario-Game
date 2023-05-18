@@ -1,0 +1,7 @@
+Author: Chengyan Wang
+Date: 9/27/22
+FileName: Entity.cs
+FileAuthors: Kevyn Angueira Irizarry
+Comments: Overall, I think this class was well done. With using Transformation class, the Entity class gets to define transformations with a specifct sprite. By using Sprite class, transformation class, and vector, this class could well define an entity with the with the features we need and keep all the attributes from multiple classes updated.
+TimeTaken: 40 min
+Changes: If I were to add an additional feature to the Sprite class, the entity will still be able to take in the change, which increase the felxibility of the code.

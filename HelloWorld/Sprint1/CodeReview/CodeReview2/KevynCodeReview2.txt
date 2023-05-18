@@ -1,0 +1,11 @@
+﻿Author: Kevyn Angueira Irizarry
+Date: 10/11/22
+FileName: Quadtree.cs
+FileAuthors: Kush
+
+Comments: The Quadtree seems to be pretty well done. Its methods are pretty focused on a single task. However it only detects possible collisions. This should be a part of a larger class that ensures collisions are detected.
+Instead collisions are handled inside the game1. Regardless this class is well built and to the point. Single responsibility.
+
+TimeTaken: 10 min
+
+Changes: In the future I would create a wrapper class of Quadtree that actually detects and handles collisions. Handling collisions in Game1 is dangerous.

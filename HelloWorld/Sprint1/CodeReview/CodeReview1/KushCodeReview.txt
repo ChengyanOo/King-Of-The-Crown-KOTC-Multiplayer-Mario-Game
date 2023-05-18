@@ -1,0 +1,19 @@
+Author: Kush Dalal
+Date: 9/27/22
+FileName: NewSpriteAnimation.cs
+FileAuthors: Riley Downs
+Comments: 
+	Initial glance shows a few things that can be cleaned up. Firstly, there arent any comments in the code,
+	and while most of the variables are self explanatory, it would be nice to have a few comments to explain 
+	important functions and lines. The code is broken up into functions well. Some of the names can be simplified
+	by removing unneccessary calls to this, such as lines 27 and 28. Line 62 collects the time since last frame
+	however it does this as an int which could could cause skipping or rounding issues. A minor thing is that the
+	function naming scheme seems to alternate between camel case and pascal case. This should be cast to a float. 
+	Overall the code is well written and easy to read. Integration into other scripts is also smooth as seen
+	in NewSprite.cs which simply creates an animation.
+TimeTaken: 23 Mins
+Changes: 
+	For future sprints, I think the organization of this script can be simplified and the constructors for rows
+	and columns feel too big. Similarly the constructor can be simplified by removing calls to this, which would also 
+	help with organization. Perhaps some comments for getSourceRectangle to explain what it does in plain english to
+	help save time could also be useful. 

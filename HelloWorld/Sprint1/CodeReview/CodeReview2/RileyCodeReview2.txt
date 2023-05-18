@@ -1,0 +1,33 @@
+﻿Author: Riley Downs
+Date: 10/11/2022
+Sprint 2
+Reviewing: PlayerEntity.cs by Kevyn
+
+Do we need the first constructor if it is never used? 
+In what situations would an entity with no position be helpful? I should talk to the team about this.
+The variables are clearly named and all used. Extensive use of factories provides modularity and is good.
+
+The method Set(SpriteEnum) is somewhat unclear in its meaning. It calls both SetSprite and SetState. Maybe ConfigureEntity?
+I'm not sure what a good name would be, but the use of Set(SpriteEnum) was confusing to me. It is used 34 times, so it
+definitely isn't a candidate for deletion.
+
+The method Set(actionState, powerState) is never used, so it may be alright to delete it.
+
+In Update(gameTime), should we really be creating a new Collider every Update (60 times a second)? 
+Collider should probably instead have an Update() method that changes the origin when Sprite moves. Changes in
+powerState should trigger a change in Collider since it may be a different size. Should there be a cache of Colliders?
+Transformation provides modularity in Update() and is a good OO decision.
+
+The naming of "OnCollisionEnter" is somewhat unclear. "Collide" may be a better name.
+This method could use more comments to explain lines. Directions should maybe be an Enum instead of an int because
+the mappings of 0, 1, 2, 3 are not obvious.
+
+setSprite() and setState() should also include more comments. A lot of code is very tightly coupled to SpriteEnum
+and if we made any changes to its internal representation it could be catastrophic. I think we might want to create
+methods for SpriteEnum that do stuff like "spriteType.isPlayer()" or something.
+
+Suggestions for future Sprints: Separating out lines like "((spriteType & SpriteEnum.player) == SpriteEnum.player)"
+to methods in SpriteEnum, like boolean spriteType.isPlayer(). This way if we change how "is this SpriteEnum a player SpriteEnum"
+is represented, we only have to change isPlayer() in one location
+
+Time taken on review: 28 minutes

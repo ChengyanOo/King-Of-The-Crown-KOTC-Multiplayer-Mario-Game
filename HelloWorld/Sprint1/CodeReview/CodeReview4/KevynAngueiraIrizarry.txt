@@ -1,0 +1,10 @@
+﻿Author: Kevyn Angueira Irizarry
+Date: 11/8/22
+FileName: PointTracker.CS
+FileAuthor: Kush
+Comments: This sprint was mostly done through a series of small classes. Mostly we dealt with the subscriber pattern. This is the delegate subscriber pattern variant that was discussed in class. It is pretty simple
+and self explanatory. It does its job to keep track of the points, adding points on all subscribed events. This implementation is interesting, I prefer to do the more manual one that has the Add and Remove 
+subscribers more explicitely. However this seems to be a shorter and simpler way to manage events.
+
+TimeTaken:  10 min
+Changes: In the future  would add ways to decrease the score as we move on to a different game. 

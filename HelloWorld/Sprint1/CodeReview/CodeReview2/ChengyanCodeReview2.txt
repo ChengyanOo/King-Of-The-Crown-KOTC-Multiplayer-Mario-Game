@@ -1,0 +1,10 @@
+﻿Author: Chengyan Wang
+Date: 10/11/22
+FileName: BlockState.cs
+FileAuthors: Kevyn Angueira Irizarry
+Comments: From my point of view, this class this well done, by creating a virtual class for sub-classes to overwrite, 
+          Kevyn did a great job at making his code lower in coupling. The Exit and Collision methods are also made for its sub-classes to overwrite, 
+          and that way it spreads the functionality into several specific sub-classes instead of putting them all in one class. 
+          I think this is a great design and really helped to specify each methods funcitonality and decreased coupling. 
+TimeTaken: 25 min
+Changes: If I were to add an additional feature to the block state class, such as an explode method, all you have to do is just create another virtual method for its sub-classes to overwrite it, which will be very flexible.

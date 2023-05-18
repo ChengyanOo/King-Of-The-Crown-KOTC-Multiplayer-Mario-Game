@@ -1,0 +1,12 @@
+﻿Author: Kush Dalal
+Date: 10/11/22
+FileName: PlayerEntity.cs
+FileAuthors: Kevyn Angueira Irizarry, with some written by me.
+Comments: The Player entity class contains a lot of the logic for the player. It is the class that controls the player factories and state contorls for the player. 
+A majority of the code appears to be constructors/generalized functions to be used elsewhere. The bottom of the class contains setState and setSprite methods 
+which change sprite enum values. The class also contains all the methods to change the player states, although there are a lot of these methods. Some of the if
+statements can be simplified as well.
+TimeTaken: 27 min
+Changes: I would recommend stripping down and splitting up the class as it is a bit too large. I would also recommend simplifying the if statements and perhaps adding
+some comments as there are almost no comments in the code, even in some of the larger methods like setState() which took me a few tries to fully understand what it did.
+Overall the script is pretty straightforward and easy to understand even if it does handle a bit too much.

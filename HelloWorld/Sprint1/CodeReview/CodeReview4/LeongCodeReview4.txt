@@ -1,0 +1,10 @@
+﻿Author: Jason Leong
+Date: 11/8/22
+FileName: EnemyPiranhaPlantState
+FileAuthor: Kevyn
+Comments: The EnemyPiranhaPlantState works similiarly to the Goomba and Koopa classes, except that its movements are done periodically as the Piranha is suppsoed 
+to pop out of pipes every X amount of time. The class structure is well organized and well implemented inside of our code. However some changes is more inline with our decision to 
+make the Enemy's states rather than Entitites. Overall the class is very easy to understand and interpret, which is helpful for when whenever our other team members needs to use 
+the EnemyPiranhaPlantState. 
+TimeTaken:  25 min
+Changes: If I could change this class, I would have made Piranha an entity rather than a State as it isn't changing states, it's only moving up and down. 

@@ -1,0 +1,17 @@
+﻿Author: Kush Dalal
+Date: 11/8/22
+FileName: LifeTracker.cs (and references to it)
+FileAuthor: Yann Wang
+TimeTaken: 25 min
+Description: Life tracker is a pretty standard file, it follows the event design pattern and controls the player lives. 
+The life tracker is implemented throughout or codebase mostly effectivly, following the event pattern. The implmentation of the tracker looks
+correct as we have a decrease and increase life function. There are two decrease life functions however, the latter does not follow event pattern.
+This is ideally not something neccesary as we should always be using the event system. Having the reset level code in the decrease life function is
+not ideal as it is not the responsibilitty of the decrease life function to reset the level. The reset level function should be somewhere else. 
+Furthermore, the implementation of the life tracker events is slightly overcomplicated in the codebase as we have to make a delegate void event and
+then a function that calls the delegate. This is not ideal as we can just use the eventhandler already built into c#.
+
+Changes:
+ We can remove the extra DecreaseLife() function as it is not even being used, and does not follow the event pattern. From there we should also expand
+reset level to be it's own check on not a direct part of decrease life. Finally we should remove the delegate void event and just use the eventhandler like
+done with the pointtracker. This is the recommended method from microsoft and is the most efficient way to implement events.

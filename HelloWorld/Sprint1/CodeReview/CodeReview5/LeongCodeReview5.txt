@@ -1,0 +1,10 @@
+﻿Author: Jason Leong
+Date: 11/29/22
+FileName: RoundTracker.cs
+FileAuthor: Chengyan 
+Comments: Overall I believe that Yann's RoundTracker was pretty streamlined, having one aspect focus on Mario and the other, focussing on Luigi. The main part of the code was to properly display his new Transition 
+images which were to play after every round. Throughout the RoundTracker, Yann uses both the singleton and subscriber patterns which overall helped to simplify a lot of the process as well as making the code easy to understand and
+not as janky as some other classes within Sprint 5. The last three functions were short and implemented properly, fufilling their single tasks. Most notably to play the win jingle. 
+TimeTaken: 25 minutes 
+Changes: Overall changes I would make is to somehow condense the Mario and Luigi functions into a single function as a lot of the Mario and LuigiWon functions shared similiar code.
+In which while making the class easy to read, it also seemed a bit repetitve at times. 

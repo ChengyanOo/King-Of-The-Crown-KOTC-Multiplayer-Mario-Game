@@ -1,0 +1,12 @@
+﻿Author: Jason Leong
+Date: 10/25/22
+FileName: EnemyKoopaState and EnemyShellState
+FileAuthor: Chengyan\
+Comments: Overall I believe that Yann's implementation of the EnemyKoopaState and EnemyShellState is organized quite well as it share a lot of similiarities with my EnemyGoombaState.
+Moreover in the EnemyShellState, it is also well documented and incooperates a timer to switch the Koopa back from Shell to a Koopa. Moreover it incoorperates Kush's rigid body physics
+system well and is easy to understand. Overall these 2 files are well made and easy to understand between any of the other HelloWorld Team Members. However I think a thing to consider to 
+fix would be the removal of the EnemyKoopaEntity class as it is not being used within the project. 
+TimeTaken:  35 min
+Changes: Remove the EnemyKoopaEntity as it is no longer used and perhaps considerring making the class look exactly like EnemyGoombaState to make it easier to understand as they'd be 
+almost the same
+

@@ -1,0 +1,18 @@
+﻿Author: Jason Leong
+Date: 9/27/22
+FileName: NewSprite.cs, NewISprite.cs
+FileAuthors:Riley Downs, Kevyn Angueira Irizarry
+Comments: 
+The overall code quality can be quite haphazard in which many of our variables and structure were mostly copied from either our previous attempts
+or files that shared a similar format. Throughout the SPrint we had to remake or start from the beginning in regards to how we wanted to implement 
+Sprites and Entities, as a resut we actually had to create a file with New Attached to it because we restarted the sprites.
+Looking over the file, it is mostly very straightforward  in terms of understanding how it works, however our variable names can be vague at times, as
+our variables were occasionally the same name as our called cs files' names(ex: texture). Despite this, the overall quality was quite easy to understand. 
+When we used NewSprite in Game1.cs, the implementation was quite smoothe and did not clump up Game1 with unnecessary code. Overall our NewSprite and the 
+NewSprites folder as a whole was very clean when considering how we inccorperated our sprites in our codebase and when creating our functions. 
+TimeTaken: 48 minutes
+Changes: If I had to recommend a change for the future, I think that we could rename a lot of our variables to be more clearer on what it's meant to do. 
+At least renaming IsVisible and isVisible to something more meaningful and different from one and another. When I was working on my tasks, I would struggle
+to understand which variable was which until I understood what the differering colors meant. The fact that I needed to match the colors to the definition and 
+declaration provides me with justification for this possible change in the future. Moreover, I believe that this change would not be too dificult and would only 
+require Team Hello World to change the variable names inside of the Sprite related files as they also use the same variable naming scheme.  

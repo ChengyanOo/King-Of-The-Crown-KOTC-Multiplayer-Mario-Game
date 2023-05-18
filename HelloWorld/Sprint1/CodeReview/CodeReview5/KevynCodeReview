@@ -1,0 +1,19 @@
+﻿Author: Kevyn Angueira Irizarry
+Date: 11/29/22
+FileName: Proggression Bar and Player Feedback
+FileAuthor: Jason
+
+Comments: 
+Jason coded the proggress bars to sequentially add portions of the bar to the bar. These bars are proportional to a value set at the begining. This value however is coded in the game class and not dependent on the max time from
+Yann's HoldTimeTracker. Moreover although it is subscribed to Yann's HoldTimeTracker the proggres bar still saves its current value and does not update on HoldTimeReductions. This is because the event is only raised when time
+increases, and only ticks forward instead of matching the time.
+
+I like the design of the player feedback as it is isolated from the rest of the code, mostly independent. However, I don't like that it is set to fixed screen dimensions. The player feedback should grow and adjust to the screen
+size for reusibility. 
+
+TimeTaken: 15 minutes 
+
+Changes: 
+If I were to change this I would make the tracker have a link to the property instead of listening through subscriptions. This way it could get the current values consistently without having to worry for special cases.
+this would allow for code reusibility in other games where the progress bar might be used as a resource bar that goes up and down. Moreover, the proggress bar increases should be set to proportions of the Wintime instead of hard coded
+Finally, the HUD should be made to fit the screen.

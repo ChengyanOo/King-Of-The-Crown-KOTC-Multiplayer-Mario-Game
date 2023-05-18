@@ -1,0 +1,17 @@
+﻿Author: Chengyan Wang
+Date: 11/8/22
+FileName: GameOverState.cs, Game1.cs, PauseState.cs, and PlayState.cs
+FileAuthor: Jason Leong
+TimeTaken: 30 min
+Comments: 
+	Looking at the PauseState and the PlayState, I think this code could been improved. Instead of only reading the
+	keyboard inputs, the pause state should has a new map of keyboard controllers. The play state basically inherites
+	the same code from the last sprint. For the GameOverState and Game1(line 205-216), I think the basic functionalities
+	has been met, but the game over screen could have been done a little better. Maybe considering change a way of formatting
+	the game stats in the game over screen. Overall, I think GameOverState, PauseState, and PlayState could haven been done
+	better.
+Changes: 
+	In the future, I suggest having a new map of keyboard commands when the game is paused, rather than using the same one as
+	the PlayState. I also suggest making GameOverState screen looking better, rather than just a black screen with stats that
+	formmated the same way as during the game play. 
+

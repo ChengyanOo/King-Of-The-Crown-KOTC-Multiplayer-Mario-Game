@@ -1,0 +1,12 @@
+﻿Author: Jason Leong
+Date: 10/11/22
+FileName: LevelLoader
+FileAuthors: Riley Downs
+Comments: Overall, Riley's LevelLoader folder contains the Level.cs, FakeLevel.xml, and XMLlevelReader.cs files and is for the most
+part quite organized. However the problem with his code was that it was not very well documented, which proved to be a struggle
+because of Riley's absense from the Sprint due to being sick. As a result, it was difficult to understand what each function was 
+doing. Even so, it still overall made sense but just took the team a little to understand it and the quality followed most of 
+the proper coding practices.
+TimeTaken:  35 min
+Changes: A large change I would like to see in the future is detailed documentation and comments in regards to how to use his
+level loader as it will become a key part of the future sprints for the class. 

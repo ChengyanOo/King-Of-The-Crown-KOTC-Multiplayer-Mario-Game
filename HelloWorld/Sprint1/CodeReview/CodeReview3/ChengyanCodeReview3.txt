@@ -1,0 +1,16 @@
+﻿Author: Chengyan Wang
+Date: 10/25/22
+FileName: GoombaEnemyEntity.cs, KoopaEnemyEntity.cs, and EnemeyEntity.cs
+FileAuthor: Jason Leong
+TimeTaken: 30 min
+Comments: 
+	Both GoombaEnemyEntity.cs and KoopaEnemyEntity.cs instantiates the EnemyEntity class and defiens behaviors for
+	Koopa and Goomba entities. But each method inside the sub-classes has the same body as the super class, so there
+	are couple of things that could have been done better. One of them would be remove all the redundant code
+	from the sub classes and the super classes. The other one would be maybe consider delete both sub classes since
+	behaviors for enemies are similar.
+Changes: 
+	In the future sprints, I suggest either remove GoombaEnemyEntity.cs and KoopaEnemyEntity.cs, and then define all
+	the enemy entity behaviors in the EnemyEntity class, or rework of these three classes and remove all the redundant
+	code. The EnemyEntity now is a little confusing since we are not actually using KoopaEnemyEntity class.
+

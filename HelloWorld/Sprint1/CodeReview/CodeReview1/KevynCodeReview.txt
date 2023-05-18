@@ -1,0 +1,20 @@
+Author: Kevyn Angueira Irizarry
+Date: 9/27/22
+FileName: BlockStates
+FileAuthors: Jason and Yann
+Comments: 
+The code for States is quite coupled with Entities, Commands, and Factories. This can create a lot of dnagerous situations 
+and bugs along with code smells as which parts of the code should have access to variables and methods gets muddied.
+On the other hand, code might have had been developed for sections that were not needed for example stairs, and floors.
+This can be addressed by merging many of the classes and handling these differences in subclasses.
+Finally, a lot of information had to be pased to handle the explosion of the blocks, this information is used by only one
+of the method overrides.
+
+TimeTaken: 12 min
+
+Changes:
+For future sprints I would add methods to Entities, and States to facilitate the exchange of information such that they can be decoupled
+and do not need internal information about the working of the other. Moreover, I would pull the handling of the Explosion blocks outside
+of the States. This method was very hard coded and required extensive knowledge of most of the program. This should definetly be handled outside.
+This way it won't have dangerous data access. Finally I would consider merging block types that have limited methods and if necesary add them over
+time through proper sublclassing.

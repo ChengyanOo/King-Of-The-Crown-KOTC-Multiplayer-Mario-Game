@@ -1,0 +1,16 @@
+﻿Author: Chengyan Wang
+Date: 11/29/22
+FileName: PlayerEntity.cs and PowerState.cs
+FileAuthor: Kush Dalal
+TimeTaken: 20 mins
+
+Comments:
+In the PlayerEntity class, Kush created a CooldownTimer method that prevents user from spamming the steal button to steal the crown, and I beloieve that was well done.
+Kush used gameTime to calculate the total elapsed time and set a cool down time of 1 second. By reseting the elapsed time each time the user hits the steal button, we
+are able to prevent user spamming the button. The only change I would make to this method is to use System.Timer instead of gameTime, since System.Timer gives you an
+individual timer, so that we don't have to depend on the gameTime.
+
+In the PowerState class, Kush created a stealCrown method, which handles tranfering the crown by calculating if the crown's and player's collider boxs  are near each other,
+and if yes, the crown will be transfered to the player. Combining with the CooldownTimer, Kush is able to fulfill the functionality that the crown could be gained by getting
+near to it, and prevent user from spamming steal button at the same time. Besides, during game play and testing, there were no bugs found around this functionality, so I believe
+it was well done.

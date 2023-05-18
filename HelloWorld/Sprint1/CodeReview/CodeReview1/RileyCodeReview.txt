@@ -1,0 +1,28 @@
+﻿Author: Riley Downs
+Date: 9/27/2022
+Sprint 1
+Reviewing: Entity.cs primarily by Kevyn
+
+I think it was a good idea to make Entity a Decorator for ISprite (called NewISprite in the non-refactored code). It manages
+the position for ISprite and its subclasses add specific behavior for different kinds of entities.
+
+We should probably make an IEntity interface the way we have made interfaces for other classes. Right now we have Entity being a concrete
+class with subclasses BlockEntity, PlayerEntity, EnemyEntity, and ItemEntity (with EnemyEntity and ItemEntity being un-implemented currently).
+It would probably be a better idea to have IEntity and have IEntity: ISprite (or NewISprite in non-refactored code) and the current
+subclasses be implementing IEntity. 
+
+Right now, sprite and transformation are public class properties and to set sprite we deal with the class properties. This works, 
+but it would probably be better and coding to an interface if we did IEntity having those properties. These are good choices
+for being public properties, since they do need to be called/modified.
+
+The constructor code is very clear what is happening and doesn't need comments. 
+The code for Position, IsVisible, and IsRight all reference the base ISprite's code. This looks good by me.
+Update is also written clearly, first updating the position using transformation and then calling the base ISprite's Update method.
+Draw also looks good.
+
+Overall, I think this is a well-written use of the Decorator Design Pattern. I do think it should probably have an interface with multiple
+classes implementing it, rather than being a concrete class. We might also want to create an IEntity factory, since we will be creating many
+entities for the level. I think it would take a while to convert all uses of Entity to be IEntity with the current code. Refactoring 
+would be a pain, since we don't have an IEntity or an IEntity factory and we currently call the concrete "new" constructor every single time. 
+
+Time spent on Code review: 20 minutes
